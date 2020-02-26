@@ -26,6 +26,7 @@ class Song
     @@genres.uniq
   end
   
+<<<<<<< HEAD
   def self.genre_count
     new_hash = {}
     @@genres.each do |g|
@@ -45,6 +46,12 @@ new_hash
     new_hash = {}
     @@artists.each do |g|
       if new_hash[g]
+=======
+  def genre_count
+    new_hash = {}
+    @@genres.each do |g|
+      if new_hash[g]
+>>>>>>> 42d2bb16ea2564c32e7b5a1973cc995e607486c5
         # this means that the key of g exist 
         #so then you want to add 1 to thee value of g 
         new_hash[g] += 1
@@ -53,7 +60,12 @@ new_hash
         new_hash[g] = 1
       end
     end
+<<<<<<< HEAD
     new_hash
   end
+=======
+  end
+  new_hash
+>>>>>>> 42d2bb16ea2564c32e7b5a1973cc995e607486c5
   
 end
